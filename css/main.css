@@ -343,30 +343,43 @@ a{
 
 
     /*About Page*/
-    #aboutTraa h2{
+    .information h2{
         font-size: 80px;
         text-align: center;
         margin: 100px;
-
-
     }
 
-    #aboutTraa p{
+    .information h4{
+        margin-left: 20px;
+
+        font-size: 70px;
+        text-transform: none;
+    }
+
+    .information h5{
+        margin-left: 20px;
+        font-size: 40px;
+        margin-top: 20px;
+        text-transform: none;
+    }
+
+    .information p{
         margin: 20px;
 
-        font-size: 26px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 44px;
     }
 
     #aboutImg{
-        width: 95%;
-        margin: 20px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     #volunteerImg{
         width: 100%;
-        margin-bottom: 20px;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
 
@@ -397,6 +410,21 @@ a{
         border-top: solid 1px #cccccc; 
         margin-top: 25px;
         padding: 25px;
+    }
+
+    #sponsors{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #sponsors img{
+        margin-bottom: 100px;
+    }
+
+    #troutProject img{
+        margin-bottom: 50px;
+
+        width: 100%;
     }
     
 
