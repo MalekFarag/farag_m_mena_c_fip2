@@ -1,12 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-.hidden{
-	display: none;
-}
-
-
-
 /*@FONT FACE LINKING*/
 @font-face{
 	font-family: 'Oswald';
@@ -72,7 +66,6 @@
     font-style: normal;
 }
 
-/*END OF FONT LINKING*/
 
 /*SITE WIDE RULES*/
 
@@ -80,13 +73,15 @@
 	margin: 0 auto;
 }
 
-body{
+body, button{
 	font-family: 'Oswald', 'arial', 'sans-serif';
 }
 
 
-h1,h2,h3{
-    font-style: italic;
+h1,h2,h3,h4,h5,h6{
+    color: #3F3F3F;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 p{
@@ -97,4 +92,331 @@ p{
     cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+}
+
+.rotate{
+    transform: rotate(90deg);
+
+}
+
+
+
+
+/*Mobile First Styling*/
+
+    /*HEADER*/
+    #header{
+        height: 275px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 9px 43px -9px rgba(0,0,0,0.6); 
+
+        position: relative;
+        z-index: 90;
+    }
+
+    #logo{
+        height: 95%;
+        margin-left: 20px;
+    }
+
+    #donateHead{
+        width: 24%;
+        height: 28%;
+        margin-left: auto;
+        margin-right: 90px;
+        margin-top: 10px;
+
+        font-size: 30px;
+    }
+
+    #burgerMenu{
+        height: 37%;
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+
+    .donateBtn{
+        font-weight: lighter;
+        font-style: italic;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+
+        border: solid 1px #c89e41;
+        border-radius: 10px;
+        background-color: #c89e41;
+        transition: all .2s ease;
+    }
+
+    .headerNav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .headerNav li a{
+        color: #3F3F3F;
+    }
+
+    .headerNav li{
+        font-size: 70px;
+        padding: 50px;
+        border-top: solid 1px #cccccc; 
+    }
+
+
+
+
+    /*Footer*/
+        footer{
+            width: 90%;
+            margin: 0 auto;
+
+            border-top: solid 1px #c89e41; 
+        }
+
+        #footerArea{
+            width: 70%;
+
+            margin: 0 auto;
+            margin-bottom: 60px;
+
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    
+        footer h3{
+            margin-top: 48px;
+            margin-bottom: 40px;
+
+            font-size: 48px;
+        }
+
+        footer p, footer a{
+            font-family: 'Oswald';
+            font-weight: lighter;
+            font-style: italic;
+
+            color: #898989;
+            text-decoration: none;
+        }
+
+        footer li{
+            margin-top: 20px;
+
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        footer p{
+            font-size: 30px;
+
+            line-height: 46px;
+        }
+
+        footer #footerIcons{
+            display: grid;
+            grid-template-columns: 90px 90px;
+            grid-template-rows: 90px 90px;
+        }
+
+        footer .footerIcon{
+            height: 50px;
+            padding-right: 10px;
+            padding-bottom: 20px; 
+
+            margin-right: auto;
+        }
+
+        footer #insta{
+            position: relative;
+            right: 10px;
+            bottom: 5px;
+
+            height: 60px;
+        }
+
+
+
+
+    /*Index Page*/
+        #heroArea #heroTitle{
+            margin-left: 20px;
+        }
+
+        #heroArea{
+            background: url(../images/hero_man2.jpg) no-repeat;
+
+            height: 700px;
+            display: flex;
+            align-items: center;
+        }
+
+        #heroArea h2{
+            color: #333;
+            text-transform: uppercase;
+            font-style: italic;
+
+            font-size: 120px;
+        }
+
+        #heroArea p{
+            font-size: 40px;
+            letter-spacing: 1px;
+            line-height: 40px;
+
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+
+
+        #eventArea{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #eventsTitle{
+            text-align: center;
+            font-size: 80px;
+            margin: 100px; 
+        }
+
+        .event{
+            width: 75%;
+
+
+            margin: 0 auto;
+            margin-bottom: 100px;
+
+            display: flex;
+            flex-direction: column;
+
+            box-shadow: 0 6px 20px 0 #E5E5E5;
+        }
+
+        .event img{
+            height: 536px;
+        }
+
+        .eventInfo{
+            margin: 0 auto;
+            width: 88%;
+        }
+
+        .eventInfo h4{
+            margin-top: 30px;
+
+            font-size: 46px;
+            font-weight: lighter;
+        }
+
+        .eventInfo p{
+            margin-top: 30px;
+
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 2px;
+
+            color: #999999;
+        }
+        
+        .eventInfo a p{
+            margin-top: 80px;
+            margin-bottom: 50px;
+
+            font-family: 'oswald';
+            font-size: 30px;
+            font-style: italic;
+            text-decoration: none;
+
+            color: #777777;
+            letter-spacing: 0px;
+        }
+
+
+    /*About Page*/
+    #aboutTraa h2{
+        font-size: 80px;
+        text-align: center;
+        margin: 100px;
+
+
+    }
+
+    #aboutTraa p{
+        margin: 20px;
+
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    #aboutImg{
+        width: 95%;
+        margin: 20px;
+    }
+
+    #volunteerImg{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+
+    #ourTeam h2{
+        font-size: 80px;
+        text-align: center;
+        margin: 100px;
+    }
+
+    #ourTeam{
+        text-align: center;
+    }
+
+    #ourTeam h5{
+        font-size: 50px;
+        padding: 5px;
+
+        text-transform: none;
+    }
+
+    #ourTeam p{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .teammate{
+        border-top: solid 1px #cccccc; 
+        margin-top: 25px;
+        padding: 25px;
+    }
+    
+
+
+
+
+
+
+
+
+@media screen and (min-width: 640px){
+
+}
+
+
+@media screen and (min-width: 900px){
+
+}
+
+.hidden{
+    display: none;
+}
 
