@@ -149,7 +149,6 @@ a{
         border: solid 1px #c89e41;
         border-radius: 10px;
         background-color: #c89e41;
-        transition: all .2s ease;
     }
 
     .headerNav{
@@ -342,7 +341,7 @@ a{
         }
 
 
-    /*About Page*/
+    /*Other Pages*/
     .information h2{
         font-size: 80px;
         text-align: center;
@@ -369,6 +368,8 @@ a{
         font-size: 22px;
         line-height: 44px;
     }
+
+/*About Page*/
 
     #aboutImg{
         width: 100%;
@@ -421,10 +422,58 @@ a{
         margin-bottom: 100px;
     }
 
+/*Projects Page*/
+
     #troutProject img{
         margin-bottom: 50px;
 
         width: 100%;
+    }
+
+/*Contact Page*/
+    #contactPage{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        width: 95%;
+    }
+
+    #contactPage label{
+        font-weight: lighter;
+        font-size: 48px;
+
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    #contactPage input{
+        height: 115px;
+        border: solid 1px #717171;
+        box-shadow: 0 6px 20px 0 #E5E5E5;
+
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #contactPage button{
+        height: 100px;
+        width: 50%;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: auto;
+        margin-left: auto;
+
+        font-size: 46px;
+        font-weight: lighter;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+
+        border: solid 1px #c89e41;
+        border-radius: 10px;
+        background-color: #c89e41;
     }
     
 
