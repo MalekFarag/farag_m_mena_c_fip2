@@ -112,7 +112,7 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0px 9px 43px -9px rgba(0,0,0,0.6); 
+        box-shadow: 0px 9px 43px -9px #eeeeee; 
 
         position: relative;
         z-index: 90;
@@ -181,7 +181,7 @@ a{
         }
 
         #footerArea{
-            width: 70%;
+            width: 85%;
 
             margin: 0 auto;
             margin-bottom: 60px;
@@ -277,7 +277,7 @@ a{
 
 
 
-        #eventArea{
+        .eventArea{
             display: flex;
             flex-direction: column;
         }
@@ -474,6 +474,80 @@ a{
         border: solid 1px #c89e41;
         border-radius: 10px;
         background-color: #c89e41;
+    }
+
+/*Merch Page*/
+    #merchArea{
+        width: 100%;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #merchArea button{
+        display: block;
+    }
+
+    .merchImg{
+        height: 450px;
+
+        background-color: whitesmoke;
+    }
+
+    .merchDiv{
+        display: flex;
+        flex-direction: column;
+
+        width: 46%;
+        height: 635px;
+
+        margin: 19px;
+        margin-top: 30px;
+        box-shadow: 0 6px 20px 0 #eeeeee;
+    }
+
+    .merchDiv h5{
+        font-size: 48px;
+
+        margin: 10px;
+    }
+
+    .merchDiv p{
+        text-align: right;
+        align-self: flex-end;
+
+        margin: 10px;
+
+        font-size: 48px;   
+        font-weight: bold;
+    }
+
+    #merch1 p{
+        position: relative;
+        top: 45px;
+    }
+
+    #merchArea button{
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        padding: 10px;
+
+        width: 25%;
+
+        font-size: 46px;
+        font-weight: lighter;
+        font-style: italic;
+        text-align: center;
+        text-decoration: none;
+        color: #c89e41;
+
+        border: solid 1px #c89e41;
+        border-radius: 10px;
+        background-color: #ffffff;
     }
     
 
