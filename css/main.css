@@ -71,6 +71,7 @@
 
 #bodyContainer{
 	margin: 0 auto;
+    max-width: 980px;
 }
 
 body, button{
@@ -243,6 +244,35 @@ a{
         }
 
 
+    /*Text Formating*/
+        .information h2{
+            font-size: 80px;
+            text-align: center;
+            margin: 100px;
+        }
+
+        .information h4{
+            margin-left: 20px;
+
+            font-size: 70px;
+            text-transform: none;
+        }
+
+        .information h5{
+            margin-left: 20px;
+            font-size: 40px;
+            margin-top: 20px;
+            text-transform: none;
+        }
+
+        .information p{
+            margin: 20px;
+
+            font-size: 22px;
+            line-height: 44px;
+        }
+
+
 
 
     /*Index Page*/
@@ -251,7 +281,7 @@ a{
         }
 
         #heroArea{
-            background: url(../images/hero_man2.jpg) no-repeat;
+            background: url(../images/hero_man2.jpg) no-repeat center;
 
             height: 700px;
             display: flex;
@@ -277,7 +307,7 @@ a{
 
 
 
-        .eventArea{
+        #eventArea{
             display: flex;
             flex-direction: column;
         }
@@ -339,35 +369,6 @@ a{
             color: #777777;
             letter-spacing: 0px;
         }
-
-
-    /*Other Pages*/
-    .information h2{
-        font-size: 80px;
-        text-align: center;
-        margin: 100px;
-    }
-
-    .information h4{
-        margin-left: 20px;
-
-        font-size: 70px;
-        text-transform: none;
-    }
-
-    .information h5{
-        margin-left: 20px;
-        font-size: 40px;
-        margin-top: 20px;
-        text-transform: none;
-    }
-
-    .information p{
-        margin: 20px;
-
-        font-size: 22px;
-        line-height: 44px;
-    }
 
 /*About Page*/
 
@@ -552,13 +553,163 @@ a{
     
 
 
+    .hidden{
+        display: none;
+    }
 
 
 
 
 
 
-@media screen and (min-width: 640px){
+@media screen and (min-width: 769px){
+    /*Text Formating*/
+        .information h2{
+            font-size: 50px;
+            text-align: left;
+            margin: 40px;
+            margin-left: 20px;
+        }
+
+        .information h4{
+            margin-left: 20px;
+
+            font-size: 70px;
+            text-transform: none;
+        }
+
+        .information h5{
+            margin-left: 20px;
+            font-size: 40px;
+            margin-top: 20px;
+            text-transform: none;
+        }
+
+        .information p{
+            margin: 20px;
+
+            font-size: 22px;
+            line-height: 44px;
+        }
+
+    #burgerMenu{
+        display: none;
+    }
+
+    #logo{
+        width: 175px;
+    }
+
+
+    .headerNav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: inherit;
+
+        background-color: #ffffff;
+        margin: 0px;
+    }
+
+    .headerNav ul{
+        display: flex;
+    }
+
+    .headerNav li a{
+        color: #3F3F3F;
+    }
+
+    .headerNav li{
+        font-size: 30px;
+        padding: 10px;
+        border-top: none; 
+    }
+
+    #donateHead{
+        display: none;
+    }
+    
+    #donateHead2{
+        display: block;
+
+        width: 150px;
+        height: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+
+        font-size: 20px;
+    }
+
+    #header{
+        width: inherit;
+        height: 200px;
+    }
+
+    #headerDiv{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+    #heroArea{
+        background: url(../images/hero_man.jpg) no-repeat center;
+        height: 447px;
+    }
+
+    #heroTitle h2{
+        font-size: 70px;
+    }
+
+    #heroTitle p{
+        font-size: 36px;
+    }
+
+    .event h4{
+        font-size: 30px;
+    }
+
+    .event p{
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+
+    .event a p{
+        font-size: 18px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .event{
+        display: flex;
+        height: 600px;
+        width: 30%;
+    }
+
+    .event img{
+        height: 536px;
+    }
+
+
+    #eventArea{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
 
 }
 
@@ -567,7 +718,4 @@ a{
 
 }
 
-.hidden{
-    display: none;
-}
 
