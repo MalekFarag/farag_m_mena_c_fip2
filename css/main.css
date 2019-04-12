@@ -1,0 +1,573 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@FONT FACE LINKING*/
+@font-face{
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Bold.woff2') format('woff2'),
+        url('../fonts/Oswald-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Light.woff2') format('woff2'),
+        url('../fonts/Oswald-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-SemiBold.woff2') format('woff2'),
+        url('../fonts/Oswald-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Medium.woff2') format('woff2'),
+        url('../fonts/Oswald-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Oswald-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('../fonts/Quattrocento-Bold.woff2') format('woff2'),
+        url('../fonts/Quattrocento-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('../fonts/Quattrocento.woff2') format('woff2'),
+        url('../fonts/Quattrocento.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*SITE WIDE RULES*/
+
+#bodyContainer{
+	margin: 0 auto;
+}
+
+body, button{
+	font-family: 'Oswald', 'arial', 'sans-serif';
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    color: #3F3F3F;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Quattrocento';
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.rotate{
+    transform: rotate(90deg);
+
+}
+
+
+
+
+/*Mobile First Styling*/
+
+    /*HEADER*/
+    #header{
+        height: 275px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 9px 43px -9px #eeeeee; 
+
+        position: relative;
+        z-index: 90;
+    }
+
+    #logo{
+        height: 95%;
+        margin-left: 20px;
+    }
+
+    #donateHead{
+        width: 24%;
+        height: 28%;
+        margin-left: auto;
+        margin-right: 90px;
+        margin-top: 10px;
+
+        font-size: 30px;
+    }
+
+    #burgerMenu{
+        height: 37%;
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+
+    .donateBtn{
+        font-weight: lighter;
+        font-style: italic;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+
+        border: solid 1px #c89e41;
+        border-radius: 10px;
+        background-color: #c89e41;
+    }
+
+    .headerNav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .headerNav li a{
+        color: #3F3F3F;
+    }
+
+    .headerNav li{
+        font-size: 70px;
+        padding: 50px;
+        border-top: solid 1px #cccccc; 
+    }
+
+
+
+
+    /*Footer*/
+        footer{
+            width: 90%;
+            margin: 0 auto;
+
+            border-top: solid 1px #c89e41; 
+        }
+
+        #footerArea{
+            width: 85%;
+
+            margin: 0 auto;
+            margin-bottom: 60px;
+
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    
+        footer h3{
+            margin-top: 48px;
+            margin-bottom: 40px;
+
+            font-size: 48px;
+        }
+
+        footer p, footer a{
+            font-family: 'Oswald';
+            font-weight: lighter;
+            font-style: italic;
+
+            color: #898989;
+            text-decoration: none;
+        }
+
+        footer li{
+            margin-top: 20px;
+
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        footer p{
+            font-size: 30px;
+
+            line-height: 46px;
+        }
+
+        footer #footerIcons{
+            display: grid;
+            grid-template-columns: 90px 90px;
+            grid-template-rows: 90px 90px;
+        }
+
+        footer .footerIcon{
+            height: 50px;
+            padding-right: 10px;
+            padding-bottom: 20px; 
+
+            margin-right: auto;
+        }
+
+        footer #insta{
+            position: relative;
+            right: 10px;
+            bottom: 5px;
+
+            height: 60px;
+        }
+
+
+
+
+    /*Index Page*/
+        #heroArea #heroTitle{
+            margin-left: 20px;
+        }
+
+        #heroArea{
+            background: url(../images/hero_man2.jpg) no-repeat;
+
+            height: 700px;
+            display: flex;
+            align-items: center;
+        }
+
+        #heroArea h2{
+            color: #333;
+            text-transform: uppercase;
+            font-style: italic;
+
+            font-size: 120px;
+        }
+
+        #heroArea p{
+            font-size: 40px;
+            letter-spacing: 1px;
+            line-height: 40px;
+
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+
+
+        .eventArea{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #eventsTitle{
+            text-align: center;
+            font-size: 80px;
+            margin: 100px; 
+        }
+
+        .event{
+            width: 75%;
+
+
+            margin: 0 auto;
+            margin-bottom: 100px;
+
+            display: flex;
+            flex-direction: column;
+
+            box-shadow: 0 6px 20px 0 #E5E5E5;
+        }
+
+        .event img{
+            height: 536px;
+        }
+
+        .eventInfo{
+            margin: 0 auto;
+            width: 88%;
+        }
+
+        .eventInfo h4{
+            margin-top: 30px;
+
+            font-size: 46px;
+            font-weight: lighter;
+        }
+
+        .eventInfo p{
+            margin-top: 30px;
+
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 2px;
+
+            color: #999999;
+        }
+        
+        .eventInfo a p{
+            margin-top: 80px;
+            margin-bottom: 50px;
+
+            font-family: 'oswald';
+            font-size: 30px;
+            font-style: italic;
+            text-decoration: none;
+
+            color: #777777;
+            letter-spacing: 0px;
+        }
+
+
+    /*Other Pages*/
+    .information h2{
+        font-size: 80px;
+        text-align: center;
+        margin: 100px;
+    }
+
+    .information h4{
+        margin-left: 20px;
+
+        font-size: 70px;
+        text-transform: none;
+    }
+
+    .information h5{
+        margin-left: 20px;
+        font-size: 40px;
+        margin-top: 20px;
+        text-transform: none;
+    }
+
+    .information p{
+        margin: 20px;
+
+        font-size: 22px;
+        line-height: 44px;
+    }
+
+/*About Page*/
+
+    #aboutImg{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #volunteerImg{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+    #ourTeam h2{
+        font-size: 80px;
+        text-align: center;
+        margin: 100px;
+    }
+
+    #ourTeam{
+        text-align: center;
+    }
+
+    #ourTeam h5{
+        font-size: 50px;
+        padding: 5px;
+
+        text-transform: none;
+    }
+
+    #ourTeam p{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .teammate{
+        border-top: solid 1px #cccccc; 
+        margin-top: 25px;
+        padding: 25px;
+    }
+
+    #sponsors{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #sponsors img{
+        margin-bottom: 100px;
+    }
+
+/*Projects Page*/
+
+    #troutProject img{
+        margin-bottom: 50px;
+
+        width: 100%;
+    }
+
+/*Contact Page*/
+    #contactPage{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        width: 95%;
+    }
+
+    #contactPage label{
+        font-weight: lighter;
+        font-size: 48px;
+
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    #contactPage input{
+        height: 115px;
+        border: solid 1px #717171;
+        box-shadow: 0 6px 20px 0 #E5E5E5;
+
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #contactPage button{
+        height: 100px;
+        width: 50%;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: auto;
+        margin-left: auto;
+
+        font-size: 46px;
+        font-weight: lighter;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+
+        border: solid 1px #c89e41;
+        border-radius: 10px;
+        background-color: #c89e41;
+    }
+
+/*Merch Page*/
+    #merchArea{
+        width: 100%;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #merchArea button{
+        display: block;
+    }
+
+    .merchImg{
+        height: 450px;
+
+        background-color: whitesmoke;
+    }
+
+    .merchDiv{
+        display: flex;
+        flex-direction: column;
+
+        width: 46%;
+        height: 635px;
+
+        margin: 19px;
+        margin-top: 30px;
+        box-shadow: 0 6px 20px 0 #eeeeee;
+    }
+
+    .merchDiv h5{
+        font-size: 48px;
+
+        margin: 10px;
+    }
+
+    .merchDiv p{
+        text-align: right;
+        align-self: flex-end;
+
+        margin: 10px;
+
+        font-size: 48px;   
+        font-weight: bold;
+    }
+
+    #merch1 p{
+        position: relative;
+        top: 45px;
+    }
+
+    #merchArea button{
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        padding: 10px;
+
+        width: 25%;
+
+        font-size: 46px;
+        font-weight: lighter;
+        font-style: italic;
+        text-align: center;
+        text-decoration: none;
+        color: #c89e41;
+
+        border: solid 1px #c89e41;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    
+
+
+
+
+
+
+
+
+@media screen and (min-width: 640px){
+
+}
+
+
+@media screen and (min-width: 900px){
+
+}
+
+.hidden{
+    display: none;
+}
+
