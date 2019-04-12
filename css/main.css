@@ -113,7 +113,6 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0px 9px 43px -9px #eeeeee; 
 
         position: relative;
         z-index: 90;
@@ -168,6 +167,12 @@ a{
         font-size: 70px;
         padding: 50px;
         border-top: solid 1px #cccccc; 
+    }
+
+    header{
+        width: 100%;
+
+        box-shadow: 0px 9px 43px -9px #eeeeee; 
     }
 
 
@@ -620,8 +625,8 @@ a{
     }
 
     .headerNav li{
-        font-size: 30px;
-        padding: 10px;
+        font-size: 26px;
+        padding: 20px;
         border-top: none; 
     }
 
@@ -643,7 +648,7 @@ a{
 
     #header{
         width: inherit;
-        height: 200px;
+        height: 175px;
     }
 
     #headerDiv{
