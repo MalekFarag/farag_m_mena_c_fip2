@@ -109,7 +109,7 @@ a{
 
     /*HEADER*/
     #header{
-        height: 275px;
+        height: 125px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -120,23 +120,22 @@ a{
 
     #logo{
         height: 95%;
-        margin-left: 20px;
+        margin-left: 10px;
+
+        
     }
 
     #donateHead{
         width: 24%;
-        height: 28%;
-        margin-left: auto;
-        margin-right: 90px;
-        margin-top: 10px;
+        height: 30%;
+        margin-top: 5px;
 
-        font-size: 30px;
+        font-size: 20px;
     }
 
     #burgerMenu{
-        height: 37%;
-        margin-top: 10px;
-        margin-right: 50px;
+        height: 25%;
+        margin-right: 20px;
     }
 
     .donateBtn{
@@ -164,15 +163,12 @@ a{
     }
 
     .headerNav li{
-        font-size: 70px;
-        padding: 50px;
+        font-size: 30px;
+        padding: 30px;
         border-top: solid 1px #cccccc; 
     }
 
     header{
-        display: flex;
-        flex-direction: row;
-
         width: 100%;
 
         box-shadow: 0px 9px 43px -9px #eeeeee; 
@@ -183,28 +179,29 @@ a{
 
     /*Footer*/
         footer{
-            width: 90%;
+            width: 95%;
             margin: 0 auto;
 
             border-top: solid 1px #c89e41; 
         }
 
         #footerArea{
-            width: 85%;
+            width: 90%;
 
             margin: 0 auto;
-            margin-bottom: 60px;
+            margin-bottom: 10px;
 
             display: grid;
-            grid-template-columns: 4fr 1fr;
+            grid-template-columns: 5fr 1fr;
             grid-template-rows: 1fr 1fr;
+            column-gap: 25px;
         }
     
         footer h3{
             margin-top: 48px;
             margin-bottom: 40px;
 
-            font-size: 48px;
+            font-size: 30px;
         }
 
         footer p, footer a{
@@ -219,24 +216,24 @@ a{
         footer li{
             margin-top: 20px;
 
-            font-size: 30px;
+            font-size: 16px;
             text-transform: uppercase;
         }
 
         footer p{
-            font-size: 30px;
+            font-size: 16px;
 
-            line-height: 46px;
+            line-height: 30px;
         }
 
         footer #footerIcons{
             display: grid;
-            grid-template-columns: 90px 90px;
-            grid-template-rows: 90px 90px;
+            grid-template-columns: 70px 70px;
+            grid-template-rows: 70px 70px;
         }
 
         footer .footerIcon{
-            height: 50px;
+            height: 30px;
             padding-right: 10px;
             padding-bottom: 20px; 
 
@@ -248,27 +245,27 @@ a{
             right: 10px;
             bottom: 5px;
 
-            height: 60px;
+            height: 40px;
         }
 
 
     /*Text Formating*/
         .information h2{
-            font-size: 80px;
+            font-size: 40px;
             text-align: center;
-            margin: 100px;
+            margin: 40px;
         }
 
         .information h4{
             margin-left: 20px;
 
-            font-size: 70px;
+            font-size: 30px;
             text-transform: none;
         }
 
         .information h5{
             margin-left: 20px;
-            font-size: 40px;
+            font-size: 24px;
             margin-top: 20px;
             text-transform: none;
         }
@@ -276,8 +273,8 @@ a{
         .information p{
             margin: 20px;
 
-            font-size: 22px;
-            line-height: 44px;
+            font-size: 20px;
+            line-height: 40px;
         }
 
 
@@ -291,7 +288,7 @@ a{
         #heroArea{
             background: url(../images/hero_man2.jpg) no-repeat center;
 
-            height: 700px;
+            height: 400px;
             display: flex;
             align-items: center;
         }
@@ -301,13 +298,12 @@ a{
             text-transform: uppercase;
             font-style: italic;
 
-            font-size: 120px;
+            font-size: 50px;
         }
 
         #heroArea p{
-            font-size: 40px;
-            letter-spacing: 1px;
-            line-height: 40px;
+            font-size: 22px;
+            line-height: 26px;
 
             margin-top: 10px;
             margin-left: 10px;
@@ -327,7 +323,8 @@ a{
         }
 
         .event{
-            width: 75%;
+            width: 90%;
+            max-width: 500px;
 
 
             margin: 0 auto;
@@ -340,7 +337,7 @@ a{
         }
 
         .event img{
-            height: 536px;
+            width: 100%;
         }
 
         .eventInfo{
@@ -349,28 +346,28 @@ a{
         }
 
         .eventInfo h4{
-            margin-top: 30px;
+            margin-top: 20px;
 
-            font-size: 46px;
+            font-size: 30px;
             font-weight: lighter;
         }
 
         .eventInfo p{
-            margin-top: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
 
-            font-size: 28px;
+            font-size: 18px;
             line-height: 36px;
-            letter-spacing: 2px;
 
             color: #999999;
         }
         
         .eventInfo a p{
-            margin-top: 80px;
-            margin-bottom: 50px;
+            margin-top: auto;
+            margin-bottom: 20px;
 
             font-family: 'oswald';
-            font-size: 30px;
+            font-size: 20px;
             font-style: italic;
             text-decoration: none;
 
@@ -388,16 +385,16 @@ a{
 
     #volunteerImg{
         width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
 
 
     #ourTeam h2{
-        font-size: 80px;
+        font-size: 50px;
         text-align: center;
-        margin: 100px;
+        margin: 50px;
     }
 
     #ourTeam{
@@ -405,15 +402,15 @@ a{
     }
 
     #ourTeam h5{
-        font-size: 50px;
-        padding: 5px;
+        font-size: 36px;
+        padding: 10px;
 
         text-transform: none;
     }
 
     #ourTeam p{
-        font-size: 30px;
-        padding: 10px;
+        font-size: 26px;
+        padding: 7px;
     }
 
     .teammate{
@@ -428,15 +425,24 @@ a{
     }
 
     #sponsors img{
-        margin-bottom: 100px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #anglingImg{
+        position: relative;
+        right: 15px;
+        max-height: 350px;
     }
 
 /*Projects Page*/
 
     #troutProject img{
-        margin-bottom: 50px;
-
         width: 100%;
+    }
+
+    #data3{
+        margin-bottom: 30px;
     }
 
 /*Contact Page*/
@@ -450,14 +456,14 @@ a{
 
     #contactPage label{
         font-weight: lighter;
-        font-size: 48px;
+        font-size: 24px;
 
-        margin: 10px;
-        margin-top: 50px;
+        margin: 5px;
+        margin-top: 20px;
     }
 
     #contactPage input{
-        height: 115px;
+        height: 50px;
         border: solid 1px #717171;
         box-shadow: 0 6px 20px 0 #E5E5E5;
 
@@ -466,15 +472,15 @@ a{
     }
 
     #contactPage button{
-        height: 100px;
-        width: 50%;
+        height: 50px;
+        width: 30%;
 
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
 
-        font-size: 46px;
+        font-size: 26px;
         font-weight: lighter;
         text-align: center;
         text-decoration: none;
@@ -492,15 +498,17 @@ a{
         margin: 0 auto;
 
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
+
+
 
     #merchArea button{
         display: block;
     }
 
     .merchImg{
-        height: 450px;
+        height: 350px;
 
         background-color: whitesmoke;
     }
@@ -509,16 +517,14 @@ a{
         display: flex;
         flex-direction: column;
 
-        width: 46%;
-        height: 635px;
+        width: 90%;
 
-        margin: 19px;
-        margin-top: 30px;
+        margin: 10px;
         box-shadow: 0 6px 20px 0 #eeeeee;
     }
 
     .merchDiv h5{
-        font-size: 48px;
+        font-size: 26px;
 
         margin: 10px;
     }
@@ -529,25 +535,20 @@ a{
 
         margin: 10px;
 
-        font-size: 48px;   
+        margin-top: auto;
+
+        font-size: 22px;   
         font-weight: bold;
     }
 
-    #merch1 p{
-        position: relative;
-        top: 45px;
-    }
+    #checkout{
+        width: 40%;
+        height: 60px;
 
-    #merchArea button{
-        margin-left: 50px;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin: 20px;
+        margin-bottom: 30px;
 
-        padding: 10px;
-
-        width: 25%;
-
-        font-size: 46px;
+        font-size: 30px;
         font-weight: lighter;
         font-style: italic;
         text-align: center;
@@ -566,6 +567,22 @@ a{
     }
 
 
+@media screen and (min-width: 420px){
+    #merchArea{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .merchDiv{
+        width: 45%;
+    }
+
+    #merchImg{
+        height: 300px;
+    }
+}
 
 
 
