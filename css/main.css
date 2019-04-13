@@ -170,6 +170,9 @@ a{
     }
 
     header{
+        display: flex;
+        flex-direction: row;
+
         width: 100%;
 
         box-shadow: 0px 9px 43px -9px #eeeeee; 
@@ -570,7 +573,7 @@ a{
 @media screen and (min-width: 769px){
     /*Text Formating*/
         .information h2{
-            font-size: 50px;
+            font-size: 36px;
             text-align: left;
             margin: 40px;
             margin-left: 20px;
@@ -603,6 +606,7 @@ a{
 
     #logo{
         width: 175px;
+        margin: 0px;
     }
 
 
@@ -618,6 +622,7 @@ a{
 
     .headerNav ul{
         display: flex;
+        justify-content: space-between;
     }
 
     .headerNav li a{
@@ -625,8 +630,8 @@ a{
     }
 
     .headerNav li{
-        font-size: 26px;
-        padding: 20px;
+        font-size: 22px;
+        padding: 15px; 
         border-top: none; 
     }
 
@@ -640,7 +645,7 @@ a{
         width: 150px;
         height: 50px;
         margin-left: 0px;
-        margin-right: 0px;
+        margin-right: 10px;
         margin-top: 10px;
 
         font-size: 20px;
@@ -652,9 +657,8 @@ a{
     }
 
     #headerDiv{
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        min-width: 100%;
+        margin: 0 auto;
 
         display: flex;
         flex-direction: row;
@@ -664,17 +668,13 @@ a{
 
 
 
-
-
-
-
     #heroArea{
         background: url(../images/hero_man.jpg) no-repeat center;
         height: 447px;
     }
 
     #heroTitle h2{
-        font-size: 70px;
+        font-size: 62px;
     }
 
     #heroTitle p{
@@ -682,7 +682,8 @@ a{
     }
 
     .event h4{
-        font-size: 30px;
+        font-size: 26px;
+        font-weight: normal;
     }
 
     .event p{
@@ -700,11 +701,17 @@ a{
     .event{
         display: flex;
         height: 600px;
-        width: 30%;
+        width: 45%;
+        margin-bottom: 50px;
+
+    }
+
+    #event5, #event6{
+        display: none;
     }
 
     .event img{
-        height: 536px;
+        height: 530px;
     }
 
 
@@ -716,10 +723,81 @@ a{
 
     }
 
+    #footerArea{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 95%;
+    }
+
+    footer h3{
+        font-size: 24px;
+    }
+
+    footer li{
+        margin-top: 20px;
+
+        font-size: 18px;
+        text-transform: uppercase;
+        }
+
+    footer p{
+        font-size: 18px;
+
+        line-height: 46px;
+        }
+
+    footer #footerIcons{
+            display: grid;
+            grid-template-columns: 70px 70px;
+            grid-template-rows: 70px 70px;
+        }
+
+    footer .footerIcon{
+            height: 30px;
+            padding-right: 10px;
+            padding-bottom: 20px; 
+
+            margin-right: auto;
+        }
+
+    footer #insta{
+            position: relative;
+            right: 10px;
+            bottom: 7px;
+
+            height: 45px;
+        }
+
+    #donateFoot{
+            display: block;
+        }
+
+    #footerDonate{
+        width: 90px;
+        height: 40px;
+    }
+
+
+
 }
 
 
 @media screen and (min-width: 900px){
+    #headerDiv{
+        min-width: 900px;
+        max-width: 1000px;
+    }
+
+
+    #event5,#event6{
+        display: flex;
+    }
+
+    .event{
+        width: 30%;
+    }
 
 }
 
