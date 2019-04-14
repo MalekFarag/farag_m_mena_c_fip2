@@ -119,7 +119,7 @@ a{
     }
 
     #logo{
-        height: 95%;
+        height: 125px;
         margin-left: 10px;
 
 
@@ -291,6 +291,13 @@ a{
             height: 400px;
             display: flex;
             align-items: center;
+        }
+
+        #heroTitle{
+            opacity: 0;
+
+            position: relative;
+            top: 10px;
         }
 
         #heroArea h2{
@@ -671,7 +678,7 @@ a{
     }
 
     #logo{
-        width: 175px;
+        height: 150px;
         margin: 0px;
     }
 
@@ -745,17 +752,24 @@ a{
 
     #heroTitle p{
         font-size: 36px;
+        line-height: 38px;
     }
 
     .event h4{
         font-size: 26px;
         font-weight: normal;
+
+        height: 52px;
     }
 
     .event p{
         font-size: 18px;
         letter-spacing: 0px;
+
+        margin-top: 10px;
     }
+
+    
 
     .event a p{
         font-size: 18px;
@@ -766,7 +780,6 @@ a{
 
     .event{
         display: flex;
-        height: 600px;
         width: 45%;
         margin-bottom: 50px;
 
@@ -777,7 +790,9 @@ a{
     }
 
     .event img{
-        height: 530px;
+        width: 100%;
+        height: 100%;
+        align-self: center;
     }
 
 
@@ -998,6 +1013,18 @@ a{
         justify-content: space-between;
     }
 
+    #past .event:nth-child(5){
+        margin-bottom: 20px;
+    }
+
+    #past .event:nth-child(6){
+        margin-bottom: 20px;
+    }
+
+    #footerDonate{
+        font-size: 18px;
+    }
+
 
 
 
@@ -1020,7 +1047,11 @@ a{
 
     .headerNav li{
         font-size: 26px;
-        padding: 25px;
+        padding: 18px;
+    }
+
+    #logo{
+        height: 175px;
     }
 
 
@@ -1046,6 +1077,7 @@ a{
 
 
     #socialHeadCon .headIcon{
+        display: block;
         height: 28px;
     }
 
@@ -1154,6 +1186,57 @@ a{
     #formFooter{
         margin-top: 50px;
     }
+
+    #past .event:nth-child(4){
+        margin-bottom: 20px;
+    }
+
+
+    /*HOVER+ Styling*/
+    ul li a{
+        transition: all .1s ease;
+
+        cursor: pointer;
+    }
+
+    ul li a:hover{
+        color: #c89e41;
+    }
+
+    header ul li a:hover{
+        border-bottom: solid 4px #c89e41;
+    }
+
+    .event a p{
+        transition: all .1s ease;
+        cursor: pointer;
+    }
+
+    .event a p:hover{
+        color: #c89e41;
+    }
+
+    .donateBtn{
+        transition: all .1s ease;
+    }
+
+    .donateBtn:hover{
+        background-color: #ffffff;
+        border-color: #c89e41;
+        color: #c89e41;
+
+        cursor: pointer;
+    }
+
+    #contactPage button:hover{
+        background-color: #ffffff;
+        border-color: #c89e41;
+        color: #c89e41;
+
+        cursor: pointer;
+    }
+
+
 
 
 
