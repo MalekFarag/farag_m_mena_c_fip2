@@ -19,8 +19,13 @@
 	<h1 class="hidden">Welcome to the TRAA</h1>
 
 	<header>
-		<div class='socialHead hidden'>
-
+		<div id='socialHeadCon'>
+			<div class='socialHead hidden'>
+				<a href="#"><img src="images/icon_facebook.svg" class="headIcon fb"></a>
+				<a href="#"><img src="images/icon_twitter.svg" class="headIcon twitter"></a>
+				<a href="#"><img src="images/icon_instagram.svg" class="headIcon" id='insta'></a>
+				<a href="#"><img src="images/icon_youtube.svg" class="headIcon yt"></a>
+			</div>
 		</div>
 		<div id='headerDiv'>
 		<div id='header'>
@@ -59,37 +64,55 @@
 	<div id='bodyContainer'>
 		<div class="information">
 			<h2>Become a Member</h2>
-			<p>You get to be a TRAA member for a whole year for only $25.00!<br>
+			<p id='formP'>You get to be a TRAA member for a whole year for only $25.00!<br>
 			Your membership also adds another voice to our efforts in protecting and enhancing aquatic habitats in the London & area community.<br><br>
 
 			The TRAA does its best to provide a lasting service to the environment and community. It is time to give back by being part of the solution.</p>
 
 		</div>
+		<div id='contactCon'>
+			<form id='contactPage'>
+				<label>Name*</label>
+				<input type="text" required>
 
-		<form id='contactPage'>
-			<label>Name*</label>
-			<input type="text" required>
+				<label>Last Name*</label>
+				<input type="text" required>
 
-			<label>Last Name*</label>
-			<input type="text" required>
+				<label>Email*</label>
+				<input type="Email" required>
 
-			<label>Email*</label>
-			<input type="Email" required>
+				<label>Primary phone number*</label>
+				<input type="phone" required>
 
-			<label>Primary phone number*</label>
-			<input type="phone" required>
+				<label>Secondary phone number (optional)</label>
+				<input type="phone">
 
-			<label>Secondary phone number (optional)</label>
-			<input type="phone">
+				<label>Address*</label>
+				<input type="text" required>
 
-			<label>Address*</label>
-			<input type="text" required>
+				<button type="Submit">Submit</button>
+			</form>
 
-			<button type="Submit">Submit</button>
-		</form>
+			<div id='contactInfoCon'>
+				<div>
+					<img src="images/icon_phone.svg" class="conIcon" id='phone'>
+					<p id='phoneP'>519 234 4567</p>
+				</div>
+
+				<div>
+					<img src="images/icon_pin.svg" id='pin' class="conIcon">
+					<p id='pinP'>Thames River Anglers Association<br>
+					2202 Coronation Drive<br>
+					London, Ontario<br>
+					N6G 0B9
+					</p>
+				</div>
+
+			</div>
+		</div>
 		
 
-		<footer>
+		<footer id='formFooter'>
 			<div id='footerArea'>
 			
 				<div id='footerContact'>
