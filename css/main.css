@@ -534,6 +534,30 @@ a{
         flex-direction: column;
     }
 
+    #merch1 .merchImg{
+        background: url(../images/) no-repeat center;
+    }
+
+    #merch2 .merchImg{
+        background: url(../images/) no-repeat center;
+    }
+
+    #merch3 .merchImg{
+        background: url(../images/) no-repeat center;
+    }
+
+    #merch4 .merchImg{
+        background: url(../images/) no-repeat center;
+    }
+
+    #merch5 .merchImg{
+        background: url(../images/) no-repeat center;
+    }
+
+    #merch6 .merchImg{
+        background: url(../images/) no-repeat center;
+    }
+
 
 
     #merchArea button{

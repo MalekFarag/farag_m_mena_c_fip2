@@ -12,7 +12,7 @@ console.log("javascript linked up");
 	};
 
 	function showHero(){
-		TweenMax.to(hero, 1.5,{
+		TweenMax.to(hero, 1,{
 			opacity: 1,
 			y: -10,
 		});
