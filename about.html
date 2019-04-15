@@ -16,12 +16,28 @@
 </head>
 
 <body>
+	<div class="lightbox hidden">
+		<p class="close">x</p>
+
+		<div class="lightboxDiv">
+			<div class="mainImg"></div>
+			<div class="menuImgs">
+				<div class="thumbnail t1"></div>
+				<div class="thumbnail t2"></div>
+				<div class="thumbnail t3"></div>
+				<div class="thumbnail t4"></div>
+				<div class="thumbnail t5"></div>
+			</div>
+		</div>
+	</div>
+
 	<h1 class="hidden">Welcome to the TRAA</h1>
 
 	<header>
+		<div id='headerDiv'>
 		<div id='header'>
 			<h2 class="hidden">Main Header</h2>
-			<img src="images/logo.svg" id='logo'>
+			<a href="index.html"><img src="images/logo.svg" id='logo'></a>
 
 			<button id='donateHead' class="donateBtn clickable">
 			Donate
@@ -39,87 +55,113 @@
 
 				<li><a href="merch.html">Our Merch</a></li>
 
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="form.html">Contact Us</a></li>
 			</ul>
-
 		</nav>
+
+		<button id='donateHead2' class="donateBtn hidden clickable">
+			Donate
+		</button>
+
+		</div>
 	</header>
 
 			<!--START OF BODY-->
-
 	<div id='bodyContainer'>
-		<div class="information">
+		
+		<div id='about' class="information">
+			<div>
 			<h2>About The Traa</h2>
-			<p>In the spring of 1986 the TRAA was formed by anglers concerned with the state of the fishery in the Thames River watershed, particularly the dwindling smallmouth bass population in the North Thames River.</p>
+			<p id='aboutP1'>In the spring of 1986 the TRAA was formed by anglers concerned with the state of the fishery in the Thames River watershed, particularly the dwindling smallmouth bass population in the North Thames River.</p>
+			</div>
 				<img src="images/aboutTRAA4.jpg" id='aboutImg'>
-			<p>The TRAA is not a fishing club, although most members are anglers and share fishing as a common interest. We are a "hands on" environmental group who likes to work at a grass roots level.</p>
+			<p id='aboutP2'>The TRAA is not a fishing club, although most members are anglers and share fishing as a common interest. We are a "hands on" environmental group who likes to work at a grass roots level.</p>
 				<img src="images/volunteers9.jpg" id='volunteerImg'>
-			<p>The TRAA has a history of always having a core group of active members supported by those who just want to be part of the solution. Either way, every member of the TRAA is active in their advocacy for the health of the Thames River watershed and its inhbitants</p>
+			<p id='aboutP3'>The TRAA has a history of always having a core group of active members supported by those who just want to be part of the solution. Either way, every member of the TRAA is active in their advocacy for the health of the Thames River watershed and its inhbitants</p>
+		</div>
+
+		<div id='gallery' class="information">
+			<h2>Gallery</h2>
+			<div id='showcase'>
+				<div>
+					<img src="images/gallery/1.jpg" class="thumbnail t1">
+					<img src="images/gallery/2.jpg" class="thumbnail t2">
+					<img src="images/gallery/3.jpg" class="thumbnail t3">
+					<img src="images/gallery/4.jpg" class="thumbnail t4">
+				</div>
+				
+				<img src="images/gallery/5.jpg" id='img5' class="thumbnail t5">
+			</div>
+
+
 		</div>
 			
 		<div id='ourTeam'>
-			<h2>Executives</h2>
-			<div class='team'>
-				<div class="teammate">
-					<h5>Rob Huber</h5>
-					<p>President</p>
-				</div>
-				<div class="teammate">
-					<h5>Paul Holmes</h5>
-					<p>Vice President</p>
-				</div>
-				<div class="teammate">
-					<h5>Jeremy Beaton</h5>
-					<p>Secretary</p>
-				</div>
-				<div class="teammate">
-					<h5>Randy Bailey</h5>
-					<p>Treasurer</p>
-				</div>
-				<div class="teammate">
-					<h5>Adam Benger</h5>
-					<p>Chairman</p>
-				</div>
-			</div>
-			
-			<h2>Volunteer Committee Chairs</h2>
-			<div class='team'>
-				<div class="teammate">
-					<h5>Adam Bengen</h5>
-					<h5>Randy Bailey</h5>
-					<p>Hatchery Management</p>
-				</div>
-				<div class="teammate">
-					<h5>Rob Huber</h5>
-					<h5>Randy Bailey</h5>
-					<h5>Paul Noble</h5>
-					<p>Public Relations</p>
-				</div>
-				<div class="teammate">
-					<h5>Jeremy Beaton</h5>
-					<h5>Paul Holmes</h5>
-					<h5>Randy Bailey</h5>
-					<p>Habitat Manger</p>
-				</div>
-				<div class="teammate">
-					<h5>Dan Schinshoek</h5>
-					<p>Trout Manager</p>
-				</div>
-				<div class="teammate">
-					<h5>Pud Hunter</h5>
-					<p>Water Manager</p>
+			<div>
+				<h2>Executives</h2>
+				<div class='team' id='team1'>
+					<div class="teammate">
+						<h5>Rob Huber</h5>
+						<p>President</p>
+					</div>
+					<div class="teammate">
+						<h5>Paul Holmes</h5>
+						<p>Vice President</p>
+					</div>
+					<div class="teammate">
+						<h5>Jeremy Beaton</h5>
+						<p>Secretary</p>
+					</div>
+					<div class="teammate">
+						<h5>Randy Bailey</h5>
+						<p>Treasurer</p>
+					</div>
+					<div class="teammate">
+						<h5>Adam Benger</h5>
+						<p>Chairman</p>
+					</div>
 				</div>
 			</div>
-			
-			<h2>Our Sponsors</h2>
+			<div>
+				<h2>Volunteer Committee Chairs</h2>
+				<div class='team' id="team2">
+					<div class="teammate">
+						<h5>Adam Bengen</h5>
+						<h5>Randy Bailey</h5>
+						<p>Hatchery Management</p>
+					</div>
+					<div class="teammate">
+						<h5>Rob Huber</h5>
+						<h5>Randy Bailey</h5>
+						<h5>Paul Noble</h5>
+						<p>Public Relations</p>
+					</div>
+					<div class="teammate">
+						<h5>Jeremy Beaton</h5>
+						<h5>Paul Holmes</h5>
+						<h5>Randy Bailey</h5>
+						<p>Habitat Manger</p>
+					</div>
+					<div class="teammate">
+						<h5>Dan Schinshoek</h5>
+						<p>Trout Manager</p>
+					</div>
+					<div class="teammate">
+						<h5>Pud Hunter</h5>
+						<p>Water Manager</p>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="information"><h2 id='sponsorTitle'>Our Sponsors</h2></div>
 			<div id='sponsors'>
-				<img src="images/guillevin.svg">
-				<img src="images/melchers.svg">
-				<img src="images/muma.svg">
-				<img src="images/try_recycling.svg">
-				<img src="images/angling.svg">
+				<img src="images/guillevin.svg" class="sponsor">
+				<img src="images/melchers.svg" class="sponsor">
+				<img src="images/muma.svg" class="sponsor">
+				<img src="images/try_recycling.svg" class="sponsor">
+				<img src="images/angling.svg" id='anglingImg' class="sponsor">
 			</div>
-		</div>
+		
 		<footer>
 			<div id='footerArea'>
 			
@@ -138,7 +180,7 @@
 						<img src="images/icon_facebook.svg" class="footerIcon">
 						<img src="images/icon_twitter.svg" class="footerIcon">
 						<img src="images/icon_instagram.svg" class="footerIcon" id='insta'>
-						<img src="images/icon_youtube.svg" class="footerIcon">
+						<a href="https://youtu.be/qs5dNzACK4I" target="_blank"><img src="images/icon_youtube.svg" class="footerIcon"></a>
 					</div>
 				</div>
 
@@ -155,7 +197,7 @@
 
 						<li><a href="merch.html">Our Merch</a></li>
 
-						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="form.html">Contact Us</a></li>
 					</ul>
 				</nav>
 				</div>
@@ -167,6 +209,15 @@
 						<li><a href="#">Terms</a></li>
 						<li><a href="#">Privacy</a></li>
 					</ul>
+				</div>
+
+				<div id='donateFoot' class='hidden'>
+					<h3>Donate</h3>
+
+					<a href="#"><button class='donateBtn' id='footerDonate'>
+						Donate
+					</button></a>
+
 				</div>
 			</div>
 		</footer>

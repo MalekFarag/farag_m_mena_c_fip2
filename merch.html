@@ -19,9 +19,10 @@
 	<h1 class="hidden">Welcome to the TRAA</h1>
 
 	<header>
+		<div id='headerDiv'>
 		<div id='header'>
 			<h2 class="hidden">Main Header</h2>
-			<img src="images/logo.svg" id='logo'>
+			<a href="index.html"><img src="images/logo.svg" id='logo'></a>
 
 			<button id='donateHead' class="donateBtn clickable">
 			Donate
@@ -39,10 +40,15 @@
 
 				<li><a href="merch.html">Our Merch</a></li>
 
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="form.html">Contact Us</a></li>
 			</ul>
-
 		</nav>
+
+		<button id='donateHead2' class="donateBtn hidden clickable">
+			Donate
+		</button>
+
+		</div>
 	</header>
 
 			<!--START OF BODY-->
@@ -59,19 +65,19 @@
 	<div id='merchArea'>
 		<div id='merch1' class="merchDiv">
 			<div class="merchImg"></div>
-			<h5>T-Shirt - TRAA Logo</h5>
+			<h5>Men's T-Shirt - TRAA Logo</h5>
 			<p>$15.00</p>
 		</div>
 
 		<div id='merch2' class="merchDiv">
 			<div class="merchImg"></div>
-			<h5>Hat & T-Shirt - TRAA Logo</h5>
+			<h5>Women's T-Shirt - TRAA Logo</h5>
 			<p>$15.00</p>
 		</div>
 
 		<div id='merch3' class="merchDiv">
 			<div class="merchImg"></div>
-			<h5>Blue & White T-Shirt - TRAA Logo</h5>
+			<h5>Blue & White Hat - TRAA Logo</h5>
 			<p>$15.00</p>
 		</div>
 
@@ -83,19 +89,19 @@
 
 		<div id='merch5' class="merchDiv">
 			<div class="merchImg"></div>
-			<h5>Blue & White Net Hat - TRAA Logo</h5>
+			<h5>Men's T-Shirt - TRAA Logo</h5>
 			<p>$15.00</p>
 		</div>
 
 		<div id='merch6' class="merchDiv">
 			<div class="merchImg"></div>
-			<h5>Blue & White Net Hat - TRAA Logo</h5>
+			<h5>Women's T-Shirt - TRAA Logo</h5>
 			<p>$15.00</p>
 		</div>
 
-		<button>Checkout</button>
+		
 	</div>
-
+		<button id='checkout'>Checkout</button>
 		<footer>
 			<div id='footerArea'>
 			
@@ -114,7 +120,7 @@
 						<img src="images/icon_facebook.svg" class="footerIcon">
 						<img src="images/icon_twitter.svg" class="footerIcon">
 						<img src="images/icon_instagram.svg" class="footerIcon" id='insta'>
-						<img src="images/icon_youtube.svg" class="footerIcon">
+						<a href="https://youtu.be/qs5dNzACK4I" target="_blank"><img src="images/icon_youtube.svg" class="footerIcon"></a>
 					</div>
 				</div>
 
@@ -131,7 +137,7 @@
 
 						<li><a href="merch.html">Our Merch</a></li>
 
-						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="form.html">Contact Us</a></li>
 					</ul>
 				</nav>
 				</div>
@@ -143,6 +149,15 @@
 						<li><a href="#">Terms</a></li>
 						<li><a href="#">Privacy</a></li>
 					</ul>
+				</div>
+
+				<div id='donateFoot' class='hidden'>
+					<h3>Donate</h3>
+
+					<a href="#"><button class='donateBtn' id='footerDonate'>
+						Donate
+					</button></a>
+
 				</div>
 			</div>
 		</footer>
