@@ -115,7 +115,7 @@ a{
         align-items: center;
 
         position: relative;
-        z-index: 90;
+        z-index: 1;
     }
 
     #logo{
@@ -358,7 +358,6 @@ a{
             margin-top: 20px;
 
             font-size: 30px;
-            /*font-weight: lighter;*/
         }
 
         .eventInfo p{
@@ -535,27 +534,33 @@ a{
     }
 
     #merch1 .merchImg{
-        background: url(../images/) no-repeat center;
+        background: url(../images/merch1.png) no-repeat center;
+        background-size: contain;
     }
 
     #merch2 .merchImg{
-        background: url(../images/) no-repeat center;
+        background: url(../images/merch2.png) no-repeat center;
+        background-size: contain;
     }
 
     #merch3 .merchImg{
-        background: url(../images/) no-repeat center;
+        background: url(../images/merch3.png) no-repeat center;
+        background-size: contain;
     }
 
     #merch4 .merchImg{
-        background: url(../images/) no-repeat center;
+        background: url(../images/merch4.png) no-repeat center;
+        background-size: contain;
     }
 
     #merch5 .merchImg{
-        background: url(../images/) no-repeat center;
+        background: url(../images/merch5.png) no-repeat center;
+        background-size: contain;
     }
 
     #merch6 .merchImg{
-        background: url(../images/) no-repeat center;
+        background: url(../images/merch6.png) no-repeat center;
+        background-size: contain;
     }
 
 
@@ -578,6 +583,8 @@ a{
 
         margin: 10px;
         box-shadow: 0 6px 20px 0 #eeeeee;
+
+        cursor: pointer;
     }
 
     .merchDiv h5{
@@ -629,6 +636,127 @@ a{
 
     #past .event:nth-child(6){
         margin-bottom: 20px;
+    }
+
+    /*LIGHTBOX*/
+    .lightbox{
+        position: fixed;
+        z-index: 2;
+
+        background-color: black;
+
+        display: flex;
+        flex-direction: column;
+
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .close{
+        position: relative;
+        z-index: 10;
+
+        padding: 20px;
+        margin-right: 10px;
+        margin-left: auto;
+
+        font-size: 30px;
+        font-family: helvetica;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .lightboxDiv{
+        position: relative;
+        z-index: 3;
+
+        margin: 0 auto;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainImg{
+        width: 90%;
+        height: 500px;
+        background-color: gray;
+
+        background: url(../images/gallery/1.jpg) center no-repeat;
+        background-size: contain;
+    }
+
+    .menuImgs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        margin-top: 5px;
+
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .lightbox .thumbnail{
+        height: 100px;
+
+        opacity: .7;
+
+        transition: all .1s ease;
+        cursor: pointer;
+    }
+
+    .lightbox .thumbnail:hover{
+        opacity: 1;
+    }
+
+    .t1{
+        background: url(../images/gallery/1.jpg) center no-repeat;
+        background-size: contain;
+    }
+    .t2{
+        background: url(../images/gallery/2.jpg) center no-repeat;
+        background-size: contain;
+    }
+    .t3{
+        background: url(../images/gallery/3.jpg) center no-repeat;
+        background-size: contain;
+    }
+    .t4{
+        background: url(../images/gallery/4.jpg) center no-repeat;
+        background-size: contain;
+    }
+    .t5{
+        background: url(../images/gallery/5.jpg) center no-repeat;
+        background-size: contain;
+    }
+
+    #showcase{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #showcase div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    #gallery img{
+        width: 100%;
+        cursor: pointer;
+
+        transition: all .1s ease;
+    }
+
+    #gallery img:hover{
+        opacity: .7;
+    }
+
+    #img5{
+        margin-top: 5px;
     }
 
     
@@ -1050,7 +1178,15 @@ a{
     }
 
 
+    #showcase{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
 
+    #img5{
+        margin-top: 0px;
+    }
 
 
 
@@ -1257,6 +1393,23 @@ a{
         border-color: #c89e41;
         color: #c89e41;
 
+        cursor: pointer;
+    }
+
+    #checkout{
+        transition: all .1s ease;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #checkout:hover{
+        bottom: 1px;
+        border-color: #ffffff;
+        background-color: #c89e41;
+        color: #ffffff;
+    }
+
+    .footerIcon{
         cursor: pointer;
     }
 
