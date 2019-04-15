@@ -1,2 +1,0 @@
-[2019-4-14 16:41:27] layer "volunteers2.jpg2, volunteers9.jpg9": Duplicate path: volunteers2.jpg
-[2019-4-14 16:41:27] layer "volunteers2.jpg2, volunteers9.jpg9": Duplicate path: volunteers9.jpg
